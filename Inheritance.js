@@ -21,3 +21,8 @@ john.hello();
 
 var silver = new Person("silver", "Heroes");
 silver.hello();
+
+console.log(john.__proto__);
+console.log(silver.__proto__);
+
+console.log(silver.__proto__ ===john.__proto__);
