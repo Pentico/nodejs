@@ -1,6 +1,15 @@
 
-var greet =  require('./greettings');
-var string = require('util');
+var Emitter = require('./Emitter');
 
-greet.en();
-greet.es();
+var emr = new Emitter();
+
+emr.on('greet', function () {
+    console.log('Somewhere, Someone said Hello');
+});
+
+emr.on('greet',function () {
+    console.log('A greeting occured');
+});
+
+console.log('Hello');
+emr.emit('greet');
