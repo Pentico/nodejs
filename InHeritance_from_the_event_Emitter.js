@@ -9,7 +9,7 @@ function greetr() {
     this.greetting = 'Hello World';
 }
 
-util.inherits(greetr, eventEmiiter);
+util.inherits(greetr, eventEmiiter); // greetr gets the methods of eventEmitter i.e Inheriance via prototypes
 
 greetr.prototype.greet = function (data) {
     console.log(this.greetting + ' ' + data);
