@@ -30,4 +30,4 @@ arr.push(function () {
 
 arr.forEach(function (item) {
     item();
-})
+});
