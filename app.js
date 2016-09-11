@@ -1,4 +1,5 @@
-/**
- * Created by Tuane on 2016/09/10.
- */
-var heroes = require("./Inheritance");
+
+var greet =  require('./greettings');
+
+greet.en();
+greet.es();
